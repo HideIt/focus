@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:padding="50dp"
+	tools:context=".TimeTableActivity">
+
+	<TextView
+		android:id="@+id/spec_text"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignParentTop="true"
+		android:layout_margin="8dp"
+		android:background="@drawable/myrect"
+		android:elevation="4dp"
+		android:padding="16sp"
+		android:text="@string/launch_text_view"
+		android:textSize="16sp"/>
+</RelativeLayout>

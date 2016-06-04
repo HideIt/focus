@@ -1,0 +1,12 @@
+<resources>
+	<string name="app_name">Focus</string>
+
+	<string name="navigation_drawer_open">Open navigation drawer</string>
+	<string name="navigation_drawer_close">Close navigation drawer</string>
+
+	<string name="action_settings">Settings</string>
+	<string name="launch_text_view">Lock _10_ minutes if using more than _40_ minutes in one hour.\n: )</string>
+	<string name="accessibility">用于获取前台activity信息的辅助服务，若不开启，应用将无法正常运行。</string>
+	<string name="list_view_image">image of ListView</string>
+	<string name="float_view_button">(ง•_•)ง</string>
+</resources>
