@@ -1,6 +1,7 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
 
 	<TextView
 		android:id="@+id/float_view_text"
@@ -8,8 +9,38 @@
 		android:layout_height="wrap_content"
 		android:layout_alignParentTop="true"
 		android:layout_centerHorizontal="true"
-		android:padding="12sp"
+		android:padding="10sp"
 		android:text="@string/float_view_button"
-		android:textColor="#7733af"
+		android:textColor="#4caf50"
 		android:textSize="18sp"/>
+
+	<RelativeLayout
+		android:id="@+id/float_view_content"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/float_view_text"
+		android:layout_centerHorizontal="true"
+		android:layout_margin="10dp"
+		android:background="@drawable/myrect"
+		android:elevation="4dp"
+		android:paddingTop="10dp"
+		android:visibility="invisible">
+
+		<GridView
+			android:id="@+id/content_grid_view"
+			android:layout_width="280dp"
+			android:layout_height="wrap_content">
+		</GridView>
+
+		<TextView
+			android:id="@+id/content_btn"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignEnd="@id/content_grid_view"
+			android:layout_below="@id/content_grid_view"
+			android:layout_margin="20dp"
+			android:text="@string/unlock"
+			android:textColor="#000000"
+			android:textSize="16sp"/>
+	</RelativeLayout>
 </RelativeLayout>

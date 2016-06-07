@@ -9,4 +9,7 @@
 	<string name="accessibility">用于获取前台activity信息的辅助服务，若不开启，应用将无法正常运行。</string>
 	<string name="list_view_image">image of ListView</string>
 	<string name="float_view_button">(ง•_•)ง</string>
+	<string name="image_view_grid_item">image shown that phone locked</string>
+	<string name="example">example</string>
+	<string name="unlock">UNLOCK</string>
 </resources>
