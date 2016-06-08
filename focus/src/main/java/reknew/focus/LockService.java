@@ -171,6 +171,7 @@ public class LockService extends Service implements OnClickListener {
 			case R.id.content_btn:
 				//TODO
 				BetterToast.showToast("on developing...");
+				convertVisibility();
 		}
 
 //		AlertDialog.Builder builder = new AlertDialog.Builder(this, AlertDialog.THEME_DEVICE_DEFAULT_LIGHT);
@@ -222,7 +223,6 @@ public class LockService extends Service implements OnClickListener {
 
 
 	public static void setTopPackage(String topPackage) {
-		Utils.d("setTopPackage");
 		if (instance != null && appInfo != null) {
 			instance.monitor(topPackage);
 		}
@@ -236,5 +236,9 @@ public class LockService extends Service implements OnClickListener {
 			Utils.v("___not___  : " + topPackage, "top_package");
 			startFloatView();
 		}
+	}
+
+	public static boolean isRunning() {
+		return instance != null;
 	}
 }

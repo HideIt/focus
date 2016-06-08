@@ -38,6 +38,7 @@ public class LaunchActivity extends AppCompatActivity implements NavigationView.
 
 	private int hour = 0;
 	private int minute = 0;
+
 	private NumberPicker hourPicker;
 	private NumberPicker minutePicker;
 
@@ -49,10 +50,7 @@ public class LaunchActivity extends AppCompatActivity implements NavigationView.
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_launch);
 		Utils.startService(GuardService.class);
-		init();
-	}
 
-	private void init() {
 		new Thread(() -> {
 			if (Utils.isServiceRunning("reknew.focus.LockService")) {
 				finish();
