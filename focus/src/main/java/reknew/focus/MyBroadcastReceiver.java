@@ -15,7 +15,7 @@ public class MyBroadcastReceiver extends BroadcastReceiver {
 			Utils.d("will stop LockService --- by MyBroadcastReceiver");
 			Utils.stopService(LockService.class);
 		} else {
-			Utils.d("intent.getAction() = " + intent.getAction());
+			Utils.e("intent.getAction() = " + intent.getAction(), "IntentAction");
 			Utils.d("will start GuardService --- by MyBroadcastReceiver");
 			Utils.startService(GuardService.class);
 		}
